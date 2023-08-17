@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Booth Registration</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <header>
+        <h1>Booth Registration</h1>
+        <p>Register your booth for the exhibition</p>
+    </header>
+    <div class="bg">
+        <div class="containerForm">
+            <form action="submit_form.php" method="POST">
+                <label for="companyName">Company Name:</label>
+                <input type="text" id="companyName" name="companyName" placeholder="company name"
+                    required /><br /><br />
+
+                <label for="boothSize">Booth Size:</label>
+                <select id="boothSize" name="boothSize">
+                    <option value="10x10">10x10 ft</option>
+                    <option value="10x15">10x15 ft</option>
+                </select><br /><br />
+
+                <label for="useTable">Do you want to use a table?</label>
+                <input type="checkbox" id="useTable" name="useTable" /><br /><br />
+
+                <label for="numChairs">Number of Chairs Needed:</label>
+                <input type="number" id="numChairs" name="numChairs" min="0" value="0" /><br /><br />
+
+                <label for="contactName">Contact Name:</label>
+                <input type="text" id="contactName" name="contactName" placeholder="contact name"
+                    required /><br /><br />
+
+                <label for="contactNumber">Contact Number:</label>
+                <input type="tel" id="contactNumber" name="contactNumber" placeholder="xxxxxxxxxx" maxlength="10"
+                    required /><br /><br />
+
+                <input type="submit" value="Submit" class="button" />
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
